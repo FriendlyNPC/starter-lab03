@@ -41,8 +41,6 @@
 $route['default_controller'] = "welcome";
 $route['404_override'] = '';
 
-$route['sleep'] = 'first/sleep';
-
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
