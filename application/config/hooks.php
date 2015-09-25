@@ -10,7 +10,12 @@
 |
 */
 
-
+$hook['display_override'] = array(
+        'class'    => 'upperBolder',
+        'function' => 'boldTheCaps',
+        'filename' => 'upperBolder.php',
+        'filepath' => 'hooks'
+);
 
 /* End of file hooks.php */
 /* Location: ./application/config/hooks.php */

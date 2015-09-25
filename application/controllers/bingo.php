@@ -7,7 +7,7 @@
  *
  * ------------------------------------------------------------------------
  */
-class guess extends Application {
+class bingo extends Application {
     function __construct() {
         parent::__construct();
     }
