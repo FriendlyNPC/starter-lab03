@@ -47,6 +47,7 @@ $route['lock/(:any)/(:any)'] = 'Welcome/shucks';
 $route['show/(:num)'] = 'first/gimmie/$1';
 $route['dunno'] = 'guess'; 
 
+$route['(^comp\d{4}$)/(:any)'] = 'bingo/wisdom';
 $route['([a-zA-Z]{4})/bingo'] = 'bingo';
 
 /* End of file routes.php */
