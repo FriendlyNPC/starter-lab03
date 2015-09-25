@@ -8,7 +8,7 @@
  *
  * ------------------------------------------------------------------------
  */
-class First extends Application {
+class first extends Application {
 
     function __construct() {
         parent::__construct();
@@ -22,6 +22,18 @@ class First extends Application {
         $this->data['pagebody'] = 'justone';    // this is the view we want shown
         
         $record = $this->quotes->first();
+        
+        $this->data['mug'] = $record['mug'];
+        $this->data['what'] = $record['what'];
+        $this->data['who'] = $record['who'];
+        
+        $this->render();
+    }
+    
+    function sleep(){
+        $this->data['pagebody'] = 'justone';    // this is the view we want shown
+        
+        $record = $this->quotes->get(1);
         
         $this->data['mug'] = $record['mug'];
         $this->data['what'] = $record['what'];
