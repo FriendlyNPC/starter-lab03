@@ -48,7 +48,7 @@ $route['show/(:num)'] = 'first/gimmie/$1';
 $route['dunno'] = 'guess'; 
 $route['([a-zA-Z]{4})/bingo'] = 'bingo';
 
-$route['(comp\d+)/(:any)'] = 'bingo/wisdom';
+$route['(comp\d+)/(.*)'] = 'bingo/wisdom';
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
