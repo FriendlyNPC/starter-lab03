@@ -38,10 +38,11 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "Welcome";
 $route['404_override'] = '';
 
 $route['sleep'] = 'first/sleep';
-
+$route['lock/(:any)/(:any)'] = 'Welcome/shucks';
+        
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
