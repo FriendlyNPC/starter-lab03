@@ -22,7 +22,7 @@ class upperBolder {
         foreach($pat_array as $match){
             
             //find all the captialized words in the paragraph
-            preg_match_all("/\b[A-Z]+\b/", $match[1], $caps_array, PREG_SET_ORDER);
+            preg_match_all("/\b[A-Z]+[a-z]*\b/", $match[1], $caps_array, PREG_SET_ORDER);
             
             //print_r($caps_array);
             
